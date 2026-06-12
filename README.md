@@ -2,6 +2,8 @@
 
 End-to-end retail analytics and forecasting project demonstrating data engineering, data quality management, business KPI analysis, and machine learning foundations.
 
+Project maintained by Nazmul Laskar.
+
 ## Project Objectives
 
 * Build a production-style retail analytics pipeline
