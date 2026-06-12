@@ -1,21 +1,81 @@
 # Retail AI
 
-A portfolio project demonstrating data engineering, machine learning and AI techniques for retail analytics.
+End-to-end retail analytics and forecasting project demonstrating data engineering, data quality management, business KPI analysis, and machine learning foundations.
 
-## Planned Features
+## Project Objectives
 
-- Retail sales data ingestion
-- Data quality validation
-- Demand forecasting
-- Customer insights
-- Dashboard reporting
-- CI/CD automation
+* Build a production-style retail analytics pipeline
+* Perform data quality assessment and cleansing
+* Generate business KPIs
+* Create visual insights
+* Prepare datasets for forecasting models
 
-## Tech Stack
+## Dataset
 
-- Python
-- Pandas
-- Scikit-learn
-- Jupyter
-- Git
-- GitHub
+Online Retail Dataset
+
+* Original records: 541,909
+* Clean records: 392,692
+
+## Data Quality Findings
+
+| Metric               | Count   |
+| -------------------- | ------- |
+| Missing Customer IDs | 135,080 |
+| Missing Descriptions | 1,454   |
+| Duplicate Records    | 5,268   |
+| Negative Quantities  | 10,624  |
+| Negative Prices      | 2       |
+
+## Business Insights
+
+### Top Revenue Countries
+
+1. United Kingdom
+2. Netherlands
+3. EIRE
+4. Germany
+5. France
+
+### Top Revenue Products
+
+1. PAPER CRAFT, LITTLE BIRDIE
+2. REGENCY CAKESTAND 3 TIER
+3. WHITE HANGING HEART T-LIGHT HOLDER
+
+## Architecture
+
+Raw Excel Data
+→ Data Profiling
+→ Data Quality Checks
+→ Data Cleansing
+→ KPI Analysis
+→ Visualization
+→ Forecasting (Next Phase)
+
+## Technology Stack
+
+* Python
+* Pandas
+* Matplotlib
+* Scikit-learn
+* Git
+* GitHub
+* Jupyter
+
+## Project Status
+
+Phase 1 Complete:
+
+* Data ingestion
+* Data quality analysis
+* Data cleansing
+* KPI generation
+* Visualization
+
+Next:
+
+* Time-series forecasting
+* Feature engineering
+* Model evaluation
+* CI/CD automation
