@@ -94,3 +94,17 @@ Next:
 ### Revenue Forecast
 
 ![Revenue Forecast](docs/images/revenue_forecast.png)
+
+## Forecasting Limitations
+
+The current forecasting model is a baseline Linear Regression model built on monthly revenue data.
+
+Known limitations:
+
+- Only 13 monthly data points are available
+- Strong seasonal patterns exist in the dataset
+- December 2011 appears incomplete
+- The current model does not yet handle seasonality
+- Forecasts should be treated as directional, not production-grade predictions
+
+Future improvements will include seasonality-aware models, train/test validation, error metrics, and more robust feature engineering.
