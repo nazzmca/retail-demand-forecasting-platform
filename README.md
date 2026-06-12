@@ -79,3 +79,16 @@ Next:
 * Feature engineering
 * Model evaluation
 * CI/CD automation
+## Visualizations
+
+### Top Countries by Revenue
+
+![Top Countries](docs/images/top_10_countries_revenue.png)
+
+### Monthly Revenue Trend
+
+![Revenue Trend](docs/images/monthly_revenue_trend.png)
+
+### Revenue Forecast
+
+![Revenue Forecast](docs/images/revenue_forecast.png)
