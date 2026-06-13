@@ -1,16 +1,39 @@
-# Retail AI
+# Retail Demand Forecasting Platform
 
-End-to-end retail analytics and forecasting project demonstrating data engineering, data quality management, business KPI analysis, and machine learning foundations.
+End-to-end retail analytics and demand forecasting platform built using Python, Pandas, data quality validation, customer analytics, visualization, and forecasting techniques.
 
-Project maintained by Nazmul Laskar.
+## Project Overview
 
-## Project Objectives
+This project demonstrates a complete data engineering and analytics workflow using a real-world retail dataset containing over 500,000 transactions.
 
-* Build a production-style retail analytics pipeline
-* Perform data quality assessment and cleansing
-* Generate business KPIs
-* Create visual insights
-* Prepare datasets for forecasting models
+The platform performs:
+
+* Data ingestion and profiling
+* Data quality assessment
+* Data cleansing and transformation
+* Business KPI generation
+* Customer analytics
+* Revenue trend analysis
+* Demand forecasting
+* Data visualization
+
+---
+
+## Dataset
+
+Online Retail Dataset
+
+### Dataset Statistics
+
+| Metric           | Value   |
+| ---------------- | ------- |
+| Original Records | 541,909 |
+| Clean Records    | 392,692 |
+| Countries        | 37      |
+| Customers        | 4,300+  |
+| Products         | 3,600+  |
+
+---
 
 ## Architecture
 
@@ -34,13 +57,7 @@ Visualization
 Revenue Forecasting
 ```
 
-
-## Dataset
-
-Online Retail Dataset
-
-* Original records: 541,909
-* Clean records: 392,692
+---
 
 ## Data Quality Findings
 
@@ -51,6 +68,8 @@ Online Retail Dataset
 | Duplicate Records    | 5,268   |
 | Negative Quantities  | 10,624  |
 | Negative Prices      | 2       |
+
+---
 
 ## Business Insights
 
@@ -67,70 +86,61 @@ Online Retail Dataset
 1. PAPER CRAFT, LITTLE BIRDIE
 2. REGENCY CAKESTAND 3 TIER
 3. WHITE HANGING HEART T-LIGHT HOLDER
+4. JUMBO BAG RED RETROSPOT
+5. MEDIUM CERAMIC TOP STORAGE JAR
 
-## Architecture
+---
 
-Raw Excel Data
-→ Data Profiling
-→ Data Quality Checks
-→ Data Cleansing
-→ KPI Analysis
-→ Visualization
-→ Forecasting (Next Phase)
+## Customer Analytics
 
-## Technology Stack
+The platform generates customer-level insights including:
 
-* Python
-* Pandas
-* Matplotlib
-* Scikit-learn
-* Git
-* GitHub
-* Jupyter
+* Customer revenue analysis
+* Order frequency analysis
+* Average order value calculations
+* Top customer identification
 
-## Project Status
+Output dataset:
 
-Phase 1 Complete:
+```text
+data/processed/customer_revenue.csv
+```
 
-* Data ingestion
-* Data quality analysis
-* Data cleansing
-* KPI generation
-* Visualization
+---
 
-Next:
+## Forecasting
 
-* Time-series forecasting
-* Feature engineering
-* Model evaluation
-* CI/CD automation
-## Visualizations
+A baseline Linear Regression model is used to forecast future monthly revenue.
 
-### Top Countries by Revenue
+### Forecast Results
 
-![Top Countries](docs/images/top_10_countries_revenue.png)
+| Month    | Forecast Revenue |
+| -------- | ---------------- |
+| Month 13 | 926,791          |
+| Month 14 | 961,528          |
+| Month 15 | 996,265          |
 
-### Monthly Revenue Trend
+### Forecasting Limitations
 
-![Revenue Trend](docs/images/monthly_revenue_trend.png)
-
-### Revenue Forecast
-
-![Revenue Forecast](docs/images/revenue_forecast.png)
-
-## Forecasting Limitations
-
-The current forecasting model is a baseline Linear Regression model built on monthly revenue data.
+The current forecasting implementation is a baseline model.
 
 Known limitations:
 
-- Only 13 monthly data points are available
-- Strong seasonal patterns exist in the dataset
-- December 2011 appears incomplete
-- The current model does not yet handle seasonality
-- Forecasts should be treated as directional, not production-grade predictions
+* Only 13 monthly observations are available
+* Strong seasonal patterns exist
+* December 2011 appears incomplete
+* Model does not currently account for seasonality
+* Forecasts should be treated as directional estimates
 
-Future improvements will include seasonality-aware models, train/test validation, error metrics, and more robust feature engineering.
+Future versions will include:
+
+* Seasonality-aware forecasting models
+* Model evaluation metrics
+* Feature engineering
+* Train/test validation
+* Advanced forecasting techniques
+
+---
 
 ## Visualizations
 
@@ -140,7 +150,7 @@ Future improvements will include seasonality-aware models, train/test validation
 
 ### Monthly Revenue Trend
 
-![Revenue Trend](docs/images/monthly_revenue_trend.png)
+![Monthly Revenue Trend](docs/images/monthly_revenue_trend.png)
 
 ### Revenue Forecast
 
@@ -149,3 +159,92 @@ Future improvements will include seasonality-aware models, train/test validation
 ### Top Customers by Revenue
 
 ![Top Customers](docs/images/top_customers_revenue.png)
+
+---
+
+## Technology Stack
+
+### Data Engineering
+
+* Python
+* Pandas
+* NumPy
+
+### Analytics & Forecasting
+
+* Scikit-learn
+* Linear Regression
+
+### Visualization
+
+* Matplotlib
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## Repository Structure
+
+```text
+retail-demand-forecasting-platform
+│
+├── data
+│   ├── sample
+│   └── processed
+│
+├── docs
+│   └── images
+│
+├── src
+│   ├── ingestion
+│   ├── transformation
+│   └── forecasting
+│
+├── tests
+│
+├── notebooks
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## Current Features
+
+### Completed
+
+* Data ingestion pipeline
+* Data profiling
+* Data quality validation
+* Data cleansing
+* KPI analysis
+* Country revenue analysis
+* Customer revenue analysis
+* Monthly revenue aggregation
+* Revenue forecasting
+* Data visualizations
+* GitHub pull request workflow
+
+### Planned Enhancements
+
+* RFM customer segmentation
+* Customer clustering
+* Forecast model improvements
+* Unit testing
+* Docker support
+* CI/CD automation
+* AWS deployment
+
+---
+
+## Author
+
+Nazmul Laskar
+
+Senior Data Engineer | Platform Engineer | AWS Data Engineering | DevOps
+
+GitHub: https://github.com/nazzmca
