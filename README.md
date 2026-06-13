@@ -108,3 +108,21 @@ Known limitations:
 - Forecasts should be treated as directional, not production-grade predictions
 
 Future improvements will include seasonality-aware models, train/test validation, error metrics, and more robust feature engineering.
+
+## Visualizations
+
+### Top Countries by Revenue
+
+![Top Countries](docs/images/top_10_countries_revenue.png)
+
+### Monthly Revenue Trend
+
+![Revenue Trend](docs/images/monthly_revenue_trend.png)
+
+### Revenue Forecast
+
+![Revenue Forecast](docs/images/revenue_forecast.png)
+
+### Top Customers by Revenue
+
+![Top Customers](docs/images/top_customers_revenue.png)
