@@ -12,6 +12,29 @@ Project maintained by Nazmul Laskar.
 * Create visual insights
 * Prepare datasets for forecasting models
 
+## Architecture
+
+```text
+Online Retail Dataset
+        ↓
+Data Ingestion
+        ↓
+Data Profiling
+        ↓
+Data Quality Validation
+        ↓
+Data Cleansing
+        ↓
+Business KPI Analysis
+        ↓
+Customer Analytics
+        ↓
+Visualization
+        ↓
+Revenue Forecasting
+```
+
+
 ## Dataset
 
 Online Retail Dataset
